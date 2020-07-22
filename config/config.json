@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "nepa-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/nepa/NepaWebPart.js",
+          "manifest": "./src/webparts/nepa/NepaWebPart.manifest.json"
+        }
+      ]
+    },
+    "request-dashboard-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/requestDashboard/RequestDashboardWebPart.js",
+          "manifest": "./src/webparts/requestDashboard/RequestDashboardWebPart.manifest.json"
+        }
+      ]
+    },
+    "edit-request-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/editRequest/EditRequestWebPart.js",
+          "manifest": "./src/webparts/editRequest/EditRequestWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery": {
+      "path": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js",
+      "globalName": "jquery"
+    },
+    "bootstrap": {
+      "path": "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js",
+      "globalName": "bootstrap",
+      "globalDependencies": [
+        "jquery"
+      ]
+    }
+  },
+  "localizedResources": {
+    "NepaWebPartStrings": "lib/webparts/nepa/loc/{locale}.js",
+    "RequestDashboardWebPartStrings": "lib/webparts/requestDashboard/loc/{locale}.js",
+    "EditRequestWebPartStrings": "lib/webparts/editRequest/loc/{locale}.js"
+  }
+}

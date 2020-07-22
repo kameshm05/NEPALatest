@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "nepa-client-side-solution",
+    "id": "cdd71359-05dc-441a-8c66-037894fa1105",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": false,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/nepa.sppkg"
+  }
+}
